@@ -1,0 +1,11 @@
+{
+  "name": "roux-meetups",
+  "version": "1.0.0",
+  "description": "Roux Meetups sample project",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "node app/app.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
