@@ -7,10 +7,17 @@ const express = require('express'),
 const port = process.env.PORT || 3000;
 
 app.set('appData', dataFile);
+app.set('view engine', 'ejs');
+app.set('views', 'app/views');
+
+app.locals.siteTitle = 'Roux Meetups';
 
 // Routes
 const indexRoute = require('./routes/index'),
     speakerRoutes = require('./routes/speakers');
+
+// Config
+app.use(express.static('app/public'));
 
 // Routes Config
 app.use('/', indexRoute);
